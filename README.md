@@ -2,7 +2,7 @@
 This repo contains code on how to program an EEPROM without a EEPROM programming device.
 
 You require:
-1. A microcontroller (Arduino uno is recommended)
+1. A microcontroller (Arduino Nano is recommended)
 2. 2 8bit shift registers (SN74HC595N)
 3. 2 100 nf ceramic capacitors (labeled with 104)
 4. A breadboard
@@ -28,5 +28,10 @@ The EEPROM is now used by hobbyists to make retro computers. Paired with the cla
 In the 'Features' heading of the documentation for the AT28C256 states that it has "Full Military and Industrial Temperature Ranges". Maybe it was used by the Military? Who knows...
 The main reason why I chose this EEPROM is because I'm following along Ben Eaters tutorial on the 6502 computer to which he also made a video on how to make a programmer but I decided to figure it out the code by myself while I use the same parts as him.
 
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/42a81e9d-2af6-4180-80b4-33fb6668c2d5" /><img width="1200" height="610" alt="image" src="https://github.com/user-attachments/assets/a122458f-957f-49dc-b9de-f00e094bcd09" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/42a81e9d-2af6-4180-80b4-33fb6668c2d5" />
 
+
+## How does it work?
+The AT28C256 has 15 address pins, 8 data pins, write enable (WE), output enable (OE), chip enable (CE), VCC and GND. In total 28 pins that must be connected and controlled.
+The 15 address pins are used to determine at which location in the EEPROM do we want to read or write. The address range of this EEPROM is from 0x0000 to 0xEFFF. Why not 0xFFFF? That is because we only have 15 pins available for the address. Each pin represents a bit therefore we can only have 15 bit addresses. If we had 16 pins then our data storage would increase from 32K to 65k address locations, doubling our EEPROM size.
+The 8 data pins are used to read or write data into our chosen address. Each address contains 2 bytes of data. 8 bits is extremely small... The highest 8 bit number is 256 so I don't recommend proving the Collatz Conjecture or any advanced mathematics using this EEPROM. Unless the user knows how to implement multi-byte arithmetic, go ahead!
