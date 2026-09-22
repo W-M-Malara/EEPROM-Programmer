@@ -28,4 +28,5 @@ The EEPROM is now used by hobbyists to make retro computers. Paired with the cla
 In the 'Features' heading of the documentation for the AT28C256 states that it has "Full Military and Industrial Temperature Ranges". Maybe it was used by the Military? Who knows...
 The main reason why I chose this EEPROM is because I'm following along Ben Eaters tutorial on the 6502 computer to which he also made a video on how to make a programmer but I decided to figure it out the code by myself while I use the same parts as him.
 
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/42a81e9d-2af6-4180-80b4-33fb6668c2d5" /> <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/9bd3041e-70d9-400d-bee4-b2194b4c7b30" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/42a81e9d-2af6-4180-80b4-33fb6668c2d5" /><img width="1200" height="610" alt="image" src="https://github.com/user-attachments/assets/a122458f-957f-49dc-b9de-f00e094bcd09" />
+
