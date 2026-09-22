@@ -44,6 +44,6 @@ The last two pins are VCC and GND which are used to power the chip. The chip can
 ## The 8-bit shift registers (SN74HC595N)
 The programmer uses 2 shift registers to output the address to the EEPROM. The Arduino Nano has 14 digital and 8 Analog pins that we can use. That makes us 6 pins short to program the EEPROM and that's why we need to use the 8 bit shift registers for our addresses. A 8-bit shift register is a chip that takes in serial data and transforms it into parallel data. A single shift register only requires 5 inputs. The OE, SER, SRCLK and S̅R̅C̅L̅R̅. While the output is 8 bits! The SN74HC595N acts like a extension to program the EEPROM. But doesn't the EEPROM have 15 bit addresses? Thanks to the SN74HC595N design, we are able to connect both chips in such way that the bits from the first register will shift down to the second one.
 
-<img width="350" height="240" alt="diagram of shift register" src="https://github.com/user-attachments/assets/355e9bc4-8828-4729-a652-bb5d27b35cd4" /> <img width="706" height="691" alt="image" src="https://github.com/user-attachments/assets/7a5b7922-95df-4a7f-a6c1-a0dfda0cf425" />
+<img width="350" height="240" alt="diagram of shift register" src="https://github.com/user-attachments/assets/355e9bc4-8828-4729-a652-bb5d27b35cd4" /> <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/7a5b7922-95df-4a7f-a6c1-a0dfda0cf425" />
 
 
