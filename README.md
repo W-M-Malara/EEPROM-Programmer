@@ -42,4 +42,4 @@ The last two pins are VCC and GND which are used to power the chip. The chip can
 
 
 ## The Programmer
-The programmer uses 2 shift registers to output the address to the EEPROM. The Arduino Nano has 14 digital and 8 Analog pins that we can use. That makes us 6 pins short to program the EEPROM and that's why we need to use the 8 bit shift registers for our addresses. A single shift register only requires 5 inputs. The OE, SER, SRCLK and $\overline{SRCLR}$.
+The programmer uses 2 shift registers to output the address to the EEPROM. The Arduino Nano has 14 digital and 8 Analog pins that we can use. That makes us 6 pins short to program the EEPROM and that's why we need to use the 8 bit shift registers for our addresses. A single shift register only requires 5 inputs. The OE, SER, SRCLK and S̅R̅C̅L̅R̅.
